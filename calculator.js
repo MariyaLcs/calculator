@@ -11,7 +11,7 @@ app.get("/", function (req, res) {
 app.post("/bmicalculator", function (req, res) {
   let num1 = Number(req.body.num1);
   let num2 = Number(req.body.num2);
-  const result = (num1 / num2) * num2;
+  const result = num1 / (num2 * num2);
   res.send(`Your BMI is ${result}`);
 });
 
